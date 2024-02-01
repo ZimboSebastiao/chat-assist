@@ -2,10 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+/* Variáveis CSS */
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --cor-primaria-fundo: #0b0a3f;
+  --cor-primaria-fundo-hover: #030226;
+  --cor-primaria: #f2f2f2;
+  --cor-primaria-hover: #ebebeb;
+  --cor-secundaria-fundo: #4ba3c3;
+  --cor-secundaria-fundo-hover: #2f88a8;
+  --cor-secundaria: #e4e3f2;
+  --cor-secundaria-hover: #e2e2eb;
+  --sombra-box: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --borda-arredondada: 0.5rem;
+}
+html {
+  font-size: 16px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Fjalla One", sans-serif;
+  margin: 1rem 0;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2rem;
+  color: darkblue;
+}
+
+p {
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: var(--borda-arredondada);
+  text-align: center;
+  color: #454a4c;
+}
+.limitador {
+  width: 80%;
+  max-width: 1000px;
+  margin: auto;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  background-color: #bfddee;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,9 +72,20 @@
   }
 }
 
-.limitador {
-  width: 90%;
-  max-width: 1000px;
-  margin: auto;
-  padding-bottom: 2rem;
+div {
+  width: 100%;
+  background-color: #ffffff;
+
+  border-radius: var(--borda-arredondada);
+  padding: 1rem;
+}
+
+.nluxc-root
+  > .nluxc-chat-room-container
+  > .nluxc-chat-room-conversation-container
+  > .nluxc-conversation-messages-container {
+  overflow: hidden !important;
+  flex: 1;
+  padding-right: var(--nluxc-padding);
+  padding-left: var(--nluxc-padding);
 }

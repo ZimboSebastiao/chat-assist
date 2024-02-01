@@ -15,14 +15,21 @@ export const App = () => {
   const chatGptAdapter = useAdapter(adapterConfig);
 
   return (
-    <div className="limitador">
-      <AiChat
-        adapter={chatGptAdapter}
-        promptBoxOptions={{
-          placeholder: "How can I help you today?",
-        }}
-      />
-    </div>
+    <>
+      <h1>Gerador de Tarefa</h1>
+      <p>
+        Utilize este sistema para gerar tarefas usando o OpenAI como
+        inteligência artificial que irá gerar respostas precisas e estruturadas.
+      </p>
+      <div className="limitador">
+        <AiChat
+          adapter={chatGptAdapter}
+          promptBoxOptions={{
+            placeholder: "Como posso te ajudar hoje?",
+          }}
+        />
+      </div>
+    </>
   );
 };
 
