@@ -4,7 +4,7 @@
   "description": "PWA criada com Next.js",
   "icons": [
     {
-      "src": "/images/favicon.png",
+      "src": "images/favicon.png",
       "type": "image/png",
       "sizes": "326x298"
     }
