@@ -1,10 +1,11 @@
 import { AiChat } from "@nlux/react";
 import { useAdapter } from "@nlux/openai-react";
-
 import "@nlux/themes/nova.css";
 
+const apiKey = process.env.NEXT_PUBLIC_OPENAI_API_KEY;
+
 const adapterConfig = {
-  apiKey: "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",
+  apiKey: `${apiKey}`,
   systemMessage:
     "Crie tasks para desenvolvimento de software segundo as informações passadas pelo usuário." +
     "Escreva respostas concisas. Seja preciso.",
