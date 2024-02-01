@@ -6,7 +6,7 @@
     {
       "src": "images/favicon.png",
       "type": "image/png",
-      "sizes": "326x298"
+      "sizes": "256x256"
     }
   ],
   "start_url": "/",
