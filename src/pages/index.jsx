@@ -17,7 +17,7 @@ export const App = () => {
   return (
     <>
       <h1>Gerador de Tarefa</h1>
-      <p>
+      <p className="sty-p">
         Utilize este sistema para gerar tarefas usando o OpenAI como
         inteligência artificial que irá gerar respostas precisas e estruturadas.
       </p>

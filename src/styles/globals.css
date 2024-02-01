@@ -31,9 +31,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1,
-h2,
-h3 {
+h1 {
   font-family: "Fjalla One", sans-serif;
   margin: 1rem 0;
   font-weight: bold;
@@ -42,7 +40,7 @@ h3 {
   color: darkblue;
 }
 
-p {
+.sty-p {
   margin: 1rem 0;
   padding: 1rem;
   border-radius: var(--borda-arredondada);
