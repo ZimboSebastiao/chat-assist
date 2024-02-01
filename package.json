@@ -9,9 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@nlux/core": "^0.10.5",
+    "@nlux/openai": "^0.10.5",
+    "@nlux/openai-react": "^0.10.5",
+    "@nlux/react": "^0.10.5",
+    "@nlux/themes": "^0.10.5",
+    "next": "14.1.0",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.1.0"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
