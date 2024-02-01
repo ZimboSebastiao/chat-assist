@@ -1,14 +1,16 @@
 import { AiChat } from "@nlux/react";
 import { useAdapter } from "@nlux/openai-react";
 import "@nlux/themes/nova.css";
+import Image from "next/image";
 
 const apiKey = process.env.NEXT_PUBLIC_OPENAI_API_KEY;
 
 const adapterConfig = {
   apiKey: `${apiKey}`,
   systemMessage:
-    "Crie tasks para desenvolvimento de software segundo as informações passadas pelo usuário." +
-    "Escreva respostas concisas. Seja preciso.",
+    "Crie tasks ou casos de teste para software developer segundo as informações passadas pelo usuário." +
+    "Separe as respostas em títulos e subtítulos" +
+    "Escreva respostas concisas. Seja preciso e criativo.",
 };
 
 export const App = () => {
@@ -23,7 +25,15 @@ export const App = () => {
       </p>
       <div className="limitador">
         <AiChat
+          className="custom-ai-chat-comp"
           adapter={chatGptAdapter}
+          personaOptions={{
+            bot: {
+              name: "Rafiki",
+              picture: "/images/imagem.png",
+              tagline: "Gerar descrição de tarefa com inteligência artificial!",
+            },
+          }}
           promptBoxOptions={{
             placeholder: "Como posso te ajudar hoje?",
           }}
