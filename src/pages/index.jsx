@@ -14,12 +14,14 @@ export const App = () => {
   const chatGptAdapter = useAdapter(adapterConfig);
 
   return (
-    <AiChat
-      adapter={chatGptAdapter}
-      promptBoxOptions={{
-        placeholder: "How can I help you today?",
-      }}
-    />
+    <div className="limitador">
+      <AiChat
+        adapter={chatGptAdapter}
+        promptBoxOptions={{
+          placeholder: "How can I help you today?",
+        }}
+      />
+    </div>
   );
 };
 
