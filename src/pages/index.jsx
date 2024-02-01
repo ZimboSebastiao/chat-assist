@@ -1,7 +1,6 @@
 import { AiChat } from "@nlux/react";
 import { useAdapter } from "@nlux/openai-react";
 import "@nlux/themes/nova.css";
-import Image from "next/image";
 
 const apiKey = process.env.NEXT_PUBLIC_OPENAI_API_KEY;
 
